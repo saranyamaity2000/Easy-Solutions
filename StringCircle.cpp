@@ -51,4 +51,30 @@ void dfs(int start, vector < int > adj[], vector < bool > & visited) {
    return IsConnected(A[0].front() - 'a', 26, adj, mark);
   }
 
-// 
+// ALTERNATE BETTER SOLUTION !
+
+int isCircle(int N, vector<string> A)
+    {
+    unordered_map<char,int> first;
+    unordered_map<char,int> se ;
+    unordered_map<char,int> last;
+    int n = A.size();
+    for(int i = 0 ; i < n ;i++){
+       first[A[i][0]]++;
+       if(A[i][0] == A[i][A[i].size()-1]){
+           se[A[i][0]]++;
+       }
+       last[A[i][A[i].size()-1]]++;
+    }
+    for(int i = 0 ; i < n ;i++){
+        if(first[A[i][0]] != last[A[i][0]]){
+           return 0;
+        }
+        else if(first[A[i][0]] == se[A[i][0]]){
+           if(n != first[A[i][0]]) return 0;
+           return 1;
+        }
+    }
+    return 1;
+  }
+// -------------------------------------------------------------
