@@ -24,3 +24,11 @@ int search(int A[], int N){
 	           h = mid -1 ;  
 	    }
 	}
+// the main condition in the else if case added !
+// because if(mid%2) == 0 , means (mid+1)%2 == 1 , that is 
+// no of elements present upto that arr[mid] element 
+// is (mid + 1) so odd no of elements present , so if A[mid+1] 
+// is equal to A[mid] , it means total right portion is fully sorted
+// total even no elements present , and if the desired element 
+// that we want was the ans then len should have been odd considering
+// that desired/wanted element is not paired ! 
