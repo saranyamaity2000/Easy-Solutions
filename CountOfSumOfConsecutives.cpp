@@ -18,6 +18,15 @@
    as a odd factor as 15 can be written as (15/2) (15/2)+1=> 7 8
 
    SO NOW YOU GOT THE OBSERVATION BUDDY ? 🔥
+
+   // exceptional cases -> 14 (1 , 7 )
+   // 14/7 = 2 , so can be written as 2 2 2 2 2 2 2
+                                  2-3 2-2 2-1 2 2+1 2+2 2+3
+                                   -1  0   1  2  3   4    5
+   // now you MUST BE THINKING -1 is not NATURAL number -_- 
+   // you are right !!! 
+   //just ignore the section -1 0 1)
+   // you will still get 14 by 2 3 4 5 🔥
    
 */
 
