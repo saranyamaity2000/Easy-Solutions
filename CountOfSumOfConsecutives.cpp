@@ -38,7 +38,7 @@ class Solution {
             if(n % i != 0 ) continue ;
             if(i % 2 != 0 ) cnt++ ;  
             if((n/i) % 2 != 0) cnt++ ;  
-            if( i*i == n ) cnt-- ;  
+            if( i*i == n and i % 2 != 0 ) cnt-- ;  
         }
         return cnt ; 
     }
