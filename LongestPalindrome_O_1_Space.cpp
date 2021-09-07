@@ -10,6 +10,7 @@ public:
             l-- ; 
             r++ ;
         }
+        if( l+1 > r-1 ) return {r,r} ;
         return {l+1,r-1} ; 
     }
     
