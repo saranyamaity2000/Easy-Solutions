@@ -39,3 +39,17 @@
     }
 
 // DONE BY SARANYA MAITY ( not copied from anywhere ) 
+
+
+
+// APPROACH GIVEN in INTERNET one liner - >
+
+ void solve(){
+    ll n ;  cin>> n ;
+    ll hp = log2(n) ; 
+    ll l  = (n ^ ( 1<< hp )) ; // turning off the left most set bit ; 
+    ll ans = 2*l + 1 ; 
+    cout<<ans ; 
+}
+
+
