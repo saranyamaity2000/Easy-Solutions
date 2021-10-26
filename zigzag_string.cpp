@@ -40,3 +40,5 @@ string convert(string s, int n) {
 // problem link ->
 
 //https://practice.geeksforgeeks.org/problems/concatenation-of-zig-zag-string-in-n-rows0308/1#
+
+// HINT LINK -> https://prnt.sc/1xeoyfo
