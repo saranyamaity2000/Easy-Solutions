@@ -18,3 +18,6 @@ int findMinInsertions(string s){
         }
         return dp[0][n-1] ; 
     }
+
+// IT CAN ALSO BE SOLVED BY CALCULATIING LONGEST PALINDROMIC SUBSEQUECNCE
+WITH THE HELP OF LCS , and then ans = Len of string - LCS(S , rev(S))
